@@ -1,5 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import ItemCount from './ItemCount';
+
+
 const ItemListContainer = (props) => {
 
     return (
@@ -13,5 +16,6 @@ const ItemListContainer = (props) => {
     );
 
 }
+<ItemCount stock="5" initial="1" />
 
 export default ItemListContainer;

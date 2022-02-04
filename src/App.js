@@ -8,7 +8,8 @@ function App() {
 
     <NavBar />
     <ItemListContainer greeting="Sitio de Compras"  />
-
+    
+    
     </>
   );
 }
