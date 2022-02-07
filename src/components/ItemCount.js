@@ -22,8 +22,9 @@ const ItemCount = (props) => {
         if (cantidad > 0){
             console.log(`Ud. está comprando: `, {cantidad})
         }
-
     }
+
+
 
     return (
         <div>

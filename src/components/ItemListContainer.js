@@ -5,17 +5,19 @@ import ItemCount from './ItemCount';
 
 const ItemListContainer = (props) => {
 
+
     return (
         <div>
             <hr />
             <h5>Bienvenidos al {props.greeting} </h5>  
 
+            <ItemCount stock="5" initial="1" />
         </div>
 
-
+        
     );
 
 }
-<ItemCount stock="5" initial="1" />
+
 
 export default ItemListContainer;
