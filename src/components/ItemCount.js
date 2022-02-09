@@ -2,12 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import {useState} from 'react';
 
-const ItemCount = (props) => {
-
-    const [cantidad, setCantidad] = useState(props.initial); 
+const ItemCount = ({stock, initial, onAdd}) => {
+    const [cantidad, setCantidad] = useState(initial); 
 
     const increment = () => {
-        if (cantidad < props.stock){
+        if (cantidad <stock){
             setCantidad(parseInt(cantidad)+1); 
         }
     }
@@ -18,13 +17,12 @@ const ItemCount = (props) => {
         }
     }
 
-    const onAdd = () => {
-        if (cantidad > 0){
-            console.log(`Ud. está comprando: `, {cantidad})
-        }
-    }
 
-
+//    let onAdd = (obtenerEstado) => {
+//            if (cantidad > 0){
+//            console.log(`Ud. está comprando: `, {cantidad})
+//        }
+//    }
 
     return (
         <div>
@@ -40,10 +38,8 @@ const ItemCount = (props) => {
                 <button type="button" className="btn btn-primary">{cantidad}</button>
                 <button type="button" className="btn btn-primary" onClick={increment}>+</button>
             </div>
-            <button type="button" className="btn btn-primary" onClick={onAdd}>Agregar al carrito</button>
+            <button type="button" className="btn btn-primary" onClick={onAdd(cantidad)}>Agregar al carrito</button>
         </div>
-        
-
     );
 }
 
