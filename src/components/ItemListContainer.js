@@ -1,6 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 import ItemCount from './ItemCount';
+import ItemList from './ItemList';
 
 
 const ItemListContainer = (props) => {
@@ -20,6 +22,7 @@ const ItemListContainer = (props) => {
         <div>
             <hr />
             <h5>Bienvenidos al {props.greeting} </h5>  
+            <ItemList />
             <ItemCount stock="5" initial="1" onAdd={obtenerEstado} />
         </div>
     );
