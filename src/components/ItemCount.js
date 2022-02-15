@@ -18,11 +18,11 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
 
-//    let onAdd = (obtenerEstado) => {
-//            if (cantidad > 0){
-//            console.log(`Ud. está comprando: `, {cantidad})
-//        }
-//    }
+    const addToCart = () => {
+            if (cantidad > 0){
+            console.log(`Ud. está comprando:  ${cantidad}`)
+        }
+    }
 
     return (
         <div>
@@ -38,7 +38,7 @@ const ItemCount = ({stock, initial, onAdd}) => {
                 <button type="button" className="btn btn-primary">{cantidad}</button>
                 <button type="button" className="btn btn-primary" onClick={increment}>+</button>
             </div>
-            <button type="button" className="btn btn-primary" onClick={onAdd(cantidad)}>Agregar al carrito</button>
+            <button type="button" className="btn btn-primary" onClick={addToCart}>Agregar al carrito</button>
         </div>
     );
 }
