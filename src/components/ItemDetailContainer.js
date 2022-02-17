@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import React from 'react';
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import {customFetch} from '../util/customFetch';
