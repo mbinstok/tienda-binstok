@@ -4,7 +4,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import { useEffect, useState } from "react";
 import Item from './Item';
 // import customFetch from '../util/customFetch';
-const products = require ('../util/products');
+const {products} = require('../util/products');
 
 // El componente va a recibir una prop `items` y va a mapear estos `items` al componente `<Item … />`
 

@@ -4,14 +4,14 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import ItemList from './ItemList';
 
-const ItemListContainer = (props) => {
+const ItemListContainer = ({products}) => {
 
     return (
         <div>
             <hr />
-            <h5>Bienvenidos al {props.greeting} </h5>  
+            <h5>Bienvenidos al Sitio de Compras </h5>  
             <hr />
-            <ItemList />
+            <ItemList products={products} />
         </div>
     );
 }
